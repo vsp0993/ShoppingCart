@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Shopping Cart Application</string>
+    <string name="your_shopping_cart">Your Shopping Cart</string>
+    <string name="dummy_item_name">Burberry T-shirt</string>
+    <string name="buyok_verifed">buyok verifed</string>
+    <string name="seller_dummy_name">Blueberry store</string>
+    <string name="apply_promo_code">Apply promo code</string>
+    <string name="dummy_estimated_date">ETA 5-7 working days</string>
+    <string name="proceed_to_checkout">Proceed to checkout</string>
+    <string name="apply"><u>Apply</u></string>
+    <string name="remove"><u>Remove</u></string>
+    <string name="price">Price</string>
+    <string name="delivery_charge">Delivery Charge</string>
+    <string name="tax">Tax</string>
+    <string name="total">Total</string>
+    <string name="your_shopping_card_is_empty">Your shopping cart is empty</string>
+    <string name="the_entered_promo_code_is_not_valid_please_try_again">The entered promo code is not valid. Please try again</string>
+    <string name="invalid_promo_code">Invalid Promo Code</string>
+    <string name="are_you_sure_you_want_to_remove_this_item">Are you sure you want to remove this Item?</string>
+    <string name="alert">Alert!</string>
+</resources>

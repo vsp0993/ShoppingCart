@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_FE">#FFFEFE</color>
+    <color name="black_shade">#1F2326</color>
+    <color name="grey_shade">#AFAFAF</color>
+    <color name="black_33">#2C3033</color>
+    <color name="sea_green">#D0FFF0</color>
+    <color name="unfocused_box_color">#82A090</color>
+    <color name="focused_box_color">#82C87D</color>
+    <color name="neon_color">#BEFD4F</color>
+    <color name="end_color">#A1D34A</color>
+    <color name="center_color">#8FBC42</color>
+    <color name="start_color">#809758</color>
+</resources>

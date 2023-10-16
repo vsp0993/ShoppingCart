@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginHorizontal="16dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:paddingBottom="16dp"
+            app:cardBackgroundColor="@color/black_33"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="8dp"
+            app:strokeColor="@android:color/transparent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/itemCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="8dp"
+                    app:cardBackgroundColor="@color/black_shade"
+                    app:cardCornerRadius="8dp"
+                    app:cardElevation="10dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:strokeColor="@android:color/transparent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="16dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/clItemImage"
+                            android:layout_width="98dp"
+                            android:layout_height="91dp"
+                            app:cardCornerRadius="10dp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/ivItemImage"
+                                android:layout_width="98dp"
+                                android:layout_height="91dp"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/ic_dummy_item_image"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvItemName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:fontFamily="@font/work_sans_regular"
+                            android:text="@string/dummy_item_name"
+                            android:textColor="@color/white_FE"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toEndOf="@+id/clItemImage"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvItemPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/work_sans_regular"
+                            android:text="₹ 2500"
+                            android:textColor="@color/sea_green"
+                            android:textSize="14sp"
+                            app:layout_constraintStart_toEndOf="@+id/clItemImage"
+                            app:layout_constraintTop_toBottomOf="@+id/tvItemName" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvOfferedPrice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:fontFamily="@font/work_sans_regular"
+                            android:letterSpacing="0.01"
+                            android:text="₹ 5000"
+                            android:textColor="@color/grey_shade"
+                            android:textSize="12sp"
+                            android:visibility="gone"
+                            app:layout_constraintBottom_toBottomOf="@+id/tvItemPrice"
+                            app:layout_constraintStart_toEndOf="@+id/tvItemPrice"
+                            app:layout_constraintTop_toTopOf="@+id/tvItemPrice" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvDiscountPercent"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:fontFamily="@font/work_sans_regular"
+                            android:letterSpacing="0.01"
+                            android:text="(50% off)"
+                            android:textColor="@color/grey_shade"
+                            android:textSize="12sp"
+                            android:visibility="gone"
+                            app:layout_constraintBottom_toBottomOf="@+id/tvOfferedPrice"
+                            app:layout_constraintStart_toEndOf="@+id/tvOfferedPrice"
+                            app:layout_constraintTop_toTopOf="@+id/tvOfferedPrice" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvItemSizeTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/work_sans_regular"
+                            android:text="Size:"
+                            android:textColor="@color/grey_shade"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toEndOf="@+id/clItemImage"
+                            app:layout_constraintTop_toBottomOf="@+id/tvItemPrice" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvItemSize"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:fontFamily="@font/work_sans_regular"
+                            android:text="Medium"
+                            android:textColor="@color/white_FE"
+                            android:textSize="10sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/tvItemSizeTitle"
+                            app:layout_constraintStart_toEndOf="@+id/tvItemSizeTitle"
+                            app:layout_constraintTop_toTopOf="@+id/tvItemSizeTitle" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvItemQtyTitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="8dp"
+                            android:fontFamily="@font/work_sans_regular"
+                            android:text="Qty:"
+                            android:textColor="@color/grey_shade"
+                            android:textSize="10sp"
+                            app:layout_constraintStart_toEndOf="@+id/clItemImage"
+                            app:layout_constraintTop_toBottomOf="@+id/tvItemSizeTitle" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvItemQty"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:fontFamily="@font/work_sans_regular"
+                            android:text="2"
+                            android:textColor="@color/white_FE"
+                            android:textSize="10sp"
+                            app:layout_constraintBottom_toBottomOf="@+id/tvItemQtyTitle"
+                            app:layout_constraintStart_toEndOf="@+id/tvItemQtyTitle"
+                            app:layout_constraintTop_toTopOf="@+id/tvItemQtyTitle" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ivDelete"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_delete"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@id/tvSellerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="@font/work_sans_regular"
+                    android:letterSpacing="0.01"
+                    android:text="@string/seller_dummy_name"
+                    android:textColor="@color/white_FE"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/itemCardView" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvBuyokVerified"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="7dp"
+                    android:drawableStart="@drawable/ic_verified"
+                    android:drawablePadding="5dp"
+                    android:letterSpacing="0.01"
+                    android:text="@string/buyok_verifed"
+                    android:fontFamily="@font/work_sans_medium"
+                    android:textColor="@color/grey_shade"
+                    android:textSize="10sp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvSellerName"
+                    app:layout_constraintStart_toEndOf="@+id/tvSellerName"
+                    app:layout_constraintTop_toTopOf="@+id/tvSellerName" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:letterSpacing="0.01"
+                    android:text="@string/dummy_estimated_date"
+                    android:textColor="@color/white_FE"
+                    android:textSize="10sp"
+                    app:fontFamily="@font/work_sans_regular"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/itemCardView" />
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/ic_view_divider"
+                    app:layout_constraintTop_toBottomOf="@+id/tvSellerName" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvPromoCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:drawableStart="@drawable/ic_tag_promo_code"
+                    android:drawablePadding="5dp"
+                    android:letterSpacing="0.01"
+                    android:fontFamily="@font/work_sans_medium"
+                    android:text="@string/apply_promo_code"
+                    android:textColor="@color/white_FE"
+                    android:textSize="10sp"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/clPromoCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:background="@drawable/rounded_unfocused"
+                    android:padding="16dp"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/divider">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edtPromoCode"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:focusable="true"
+                        android:hint="Promo Code"
+                        android:imeOptions="actionDone"
+                        android:singleLine="true"
+                        android:textColor="@color/focused_box_color"
+                        android:textColorHint="@color/grey_shade"
+                        android:textCursorDrawable="@drawable/edit_text_cursor"
+                        android:textSize="12sp"
+                        app:layout_constraintEnd_toStartOf="@+id/tvApply"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.shoppingcartapplication.widget.GradientTextView
+                        android:id="@id/tvApply"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/apply"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <com.shoppingcartapplication.widget.GradientTextView
+                        android:id="@+id/tvRemove"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/remove"
+                        android:textColor="@color/unfocused_box_color"
+                        android:textSize="12sp"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvClPromoCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:background="@drawable/gradient_promo_code_constraint"
+                    android:fontFamily="@font/work_sans_regular"
+                    android:padding="5dp"
+                    android:text="Promo Code"
+                    android:textColor="@color/unfocused_box_color"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toTopOf="@+id/clPromoCode"
+                    app:layout_constraintLeft_toLeftOf="@+id/clPromoCode"
+                    app:layout_constraintTop_toTopOf="@+id/clPromoCode" />
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
